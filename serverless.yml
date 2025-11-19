@@ -9,9 +9,6 @@ provider:
   timeout: 90  # Aumentado para dar tiempo al scraping
   iam:
     role: arn:aws:iam::606646193182:role/LabRole
-  environment:
-    AWS_REGION: us-east-1
-    TABLE_NAME: TablaWebScrapping
 
 functions:
   scrape_table:

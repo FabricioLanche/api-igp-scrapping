@@ -4,7 +4,7 @@ const { DynamoDBClient } = require('@aws-sdk/client-dynamodb');
 const { DynamoDBDocumentClient, PutCommand, BatchWriteCommand } = require('@aws-sdk/lib-dynamodb');
 
 // Configurar DynamoDB
-const client = new DynamoDBClient({ region: process.env.AWS_REGION || 'us-east-1' });
+const client = new DynamoDBClient('us-east-1');
 const docClient = DynamoDBDocumentClient.from(client);
 
 const TABLE_NAME = 'TablaWebScrapping';
